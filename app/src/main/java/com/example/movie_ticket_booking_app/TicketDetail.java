@@ -72,7 +72,7 @@ public class TicketDetail extends AppCompatActivity {
             bill *=200;
             billvaluetv.setText(bill+"");
         }
-        Toast.makeText(this,moviename+"-"+ticketcount+"-"+seats+"-"+showtime+"-"+showdate,Toast.LENGTH_LONG).show();
+        //Toast.makeText(this,moviename+"-"+ticketcount+"-"+seats+"-"+showtime+"-"+showdate,Toast.LENGTH_LONG).show();
 
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +81,7 @@ public class TicketDetail extends AppCompatActivity {
                 tickethistoryref.add(productModel).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
-                        Toast.makeText(TicketDetail.this, "Booking confirmed"+documentReference.getId(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TicketDetail.this, "Booking confirmed "+documentReference.getId(), Toast.LENGTH_SHORT).show();
 
                         Intent intent = new Intent(TicketDetail.this, MovieListHomeActivity.class);
                         startActivity(intent);

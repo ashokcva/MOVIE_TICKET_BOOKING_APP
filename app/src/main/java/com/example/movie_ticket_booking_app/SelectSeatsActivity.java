@@ -45,7 +45,6 @@ public class SelectSeatsActivity extends AppCompatActivity {
         if (bundle != null) {
             value = bundle.getString("moviename");
         }
-        Toast.makeText(this, value, Toast.LENGTH_LONG).show();
 
         calcbtn = findViewById(R.id.calcbtn);
 
