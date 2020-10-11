@@ -13,10 +13,4 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
-
-    public void navMovieListHomePage(View v)
-    {
-        Intent intent = new Intent(this,MovieListHomeActivity.class);
-        startActivity(intent);
-    }
 }

@@ -38,11 +38,11 @@
         android:layout_height="48dp"
         android:layout_marginBottom="16dp"
         android:text="Sign in with Google"
-        app:layout_constraintBottom_toTopOf="@+id/buy"
+        app:layout_constraintBottom_toTopOf="@+id/loginbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
     <Button
-        android:id="@+id/buy"
+        android:id="@+id/loginbtn"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginBottom="16dp"

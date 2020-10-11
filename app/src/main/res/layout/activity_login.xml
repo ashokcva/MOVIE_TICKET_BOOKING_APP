@@ -64,7 +64,6 @@
         android:layout_marginRight="16dp"
         android:background="@drawable/button_background"
         android:text="Login"
-        android:onClick="navMovieListHomePage"
         android:textColor="@color/colorPrimaryText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int RC_SIGN_IN = 9001;
     public static GoogleSignInClient mGoogleSignInClient;
     private FirebaseAuth mAuth;
-
+    Button loginbtn, regiserbtn;
     @Override
     protected void onStart() {
         super.onStart();
@@ -54,6 +54,26 @@ public class MainActivity extends AppCompatActivity {
             }
         } );
 
+        loginbtn = findViewById(R.id.loginbtn);
+        regiserbtn = findViewById(R.id.registerbtn);
+
+        loginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+                // finish();
+            }
+        });
+
+        regiserbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(intent);
+                // finish();
+            }
+        });
     }
 
     private void createRequest() {
