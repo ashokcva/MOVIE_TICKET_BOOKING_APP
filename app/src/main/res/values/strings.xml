@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Book my tickets</string>
+    <string name="welcome_message">Hey Cool! Ready to grab your tickets?</string>
+    <string name="thankyou_message">You\'re awesome! \nTry login now!</string>
+    <string name="registering_message">Let us know more about you!</string>
+    <string name="login_message">Just one more step and you\'re good to go</string>
+</resources>
